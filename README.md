@@ -1,16 +1,20 @@
-# React + Vite
+A full-featured event booking system built with Umbraco CMS that integrates with Memberbase CRM for seamless contact and event management.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 Overview
+This project implements a membership-based event booking system where members can browse upcoming events and make bookings. All booking data is synchronized with Memberbase CRM to maintain a centralized member database.
+Key Capabilities
 
-Currently, two official plugins are available:
+Event Management: Display and search upcoming events
+Member-Only Booking: Secure booking system requiring authentication
+Memberbase Integration: Automatic synchronization of contacts and bookings
+Two-Way Sync: Import events from Memberbase and export bookings to Memberbase
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+✨ Features
+Core Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Event listing page with date search functionality
+✅ Detailed event display (title, summary, date, location, capacity)
+✅ Member-only booking form with validation
+✅ Local database persistence for bookings
+✅ Memberbase API integration for contact creation
