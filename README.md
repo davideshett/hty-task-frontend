@@ -1,20 +1,45 @@
-A full-featured event booking system built with Umbraco CMS that integrates with Memberbase CRM for seamless contact and event management.
+# Event Management Booking System
 
-🎯 Overview
-This project implements a membership-based event booking system where members can browse upcoming events and make bookings. All booking data is synchronized with Memberbase CRM to maintain a centralized member database.
-Key Capabilities
+A full-stack event management solution with CRM integration built with .NET backend and modern frontend technologies.
 
-Event Management: Display and search upcoming events
-Member-Only Booking: Secure booking system requiring authentication
-Memberbase Integration: Automatic synchronization of contacts and bookings
-Two-Way Sync: Import events from Memberbase and export bookings to Memberbase
+## 🚀 Overview
+
+This system enables users to browse events and make bookings through a web interface. When a booking is created, the system automatically generates a contact in MemberBase CRM while maintaining all records in a SQL Server database.
+
+## 🏗️ Architecture
+
+### Frontend
+- **HTML5** - Semantic markup structure
+- **CSS3** - Responsive styling and layouts
+- **JavaScript** - Client-side interactivity and API communication
+
+### Backend
+- **C# .NET** - Robust API and business logic
+- **SQL Server** - Data persistence and management
+- **Service Layer Pattern** - Clean separation of concerns
+
+## 📊 Database Schema
+
+### Core Tables
+- **Events** - Event details, dates, and capacity information
+- **Users** - User accounts and profile data
+- **Bookings** - Event registration records and relationships
+
+## 🔄 Booking Workflow
+Frontend Form → .NET API → Database Storage → MemberBase API → Booking Confirmation
 
 
-✨ Features
-Core Features
+### Process Flow
+1. User submits booking form with name, email, and event selection
+2. Frontend sends POST request to backend API
+3. Backend processes request through service layer
+4. System creates booking record in SQL Server
+5. Contact details sent to MemberBase CRM API
+6. Comprehensive logging throughout the process
+7. Success/error response returned to user
 
-✅ Event listing page with date search functionality
-✅ Detailed event display (title, summary, date, location, capacity)
-✅ Member-only booking form with validation
-✅ Local database persistence for bookings
-✅ Memberbase API integration for contact creation
+### Key Features
+1. CRM Integration: Automatic contact creation in MemberBase
+2. Comprehensive Logging: Detailed audit trails and monitoring
+3. Error Handling: Robust exception management and retry logic
+4. Data Consistency: Transaction management across operations
